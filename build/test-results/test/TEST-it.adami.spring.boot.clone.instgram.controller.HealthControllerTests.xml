@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.adami.spring.boot.clone.instgram.controller.HealthControllerTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-26T19:15:34" hostname="MacBookPro" time="0.057">
+  <properties/>
+  <testcase name="shouldReturnNoContent()" classname="it.adami.spring.boot.clone.instgram.controller.HealthControllerTests" time="0.057"/>
+  <system-out><![CDATA[2025-07-26T21:15:34.217+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [it.adami.spring.boot.clone.instgram.controller.HealthControllerTests]: HealthControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-26T21:15:34.224+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration it.adami.spring.boot.clone.instgram.InstgramSpringBootCloneApplication for test class it.adami.spring.boot.clone.instgram.controller.HealthControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-07-26T21:15:34.236+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] i.a.s.b.c.i.c.HealthControllerTests      : Starting HealthControllerTests using Java 17 with PID 17646 (started by albertoadami in /Users/albertoadami/repos/instagram-spring-boot-clone)
+2025-07-26T21:15:34.237+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] i.a.s.b.c.i.c.HealthControllerTests      : No active profile set, falling back to 1 default profile: "default"
+2025-07-26T21:15:34.352+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-07-26T21:15:34.352+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-07-26T21:15:34.353+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-07-26T21:15:34.359+02:00  INFO 17646 --- [instgram-spring-boot-clone] [    Test worker] i.a.s.b.c.i.c.HealthControllerTests      : Started HealthControllerTests in 0.134 seconds (process running for 1.521)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
