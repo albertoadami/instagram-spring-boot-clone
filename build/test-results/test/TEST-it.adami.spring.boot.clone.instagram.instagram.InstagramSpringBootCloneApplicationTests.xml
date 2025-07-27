@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.adami.spring.boot.clone.instagram.instagram.InstagramSpringBootCloneApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-27T21:04:51" hostname="MacBookPro" time="0.002">
+  <properties/>
+  <testcase name="contextLoads()" classname="it.adami.spring.boot.clone.instagram.instagram.InstagramSpringBootCloneApplicationTests" time="0.002"/>
+  <system-out><![CDATA[2025-07-27T23:04:48.927+02:00  INFO 29517 --- [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2025-07-27T23:04:48.929+02:00  INFO 29517 --- [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-07-27T23:04:48.932+02:00  INFO 29517 --- [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.3
+2025-07-27T23:04:49.013+02:00  INFO 29517 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-07-27T23:04:49.129+02:00  INFO 29517 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2025-07-27T23:04:49.130+02:00  INFO 29517 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2025-07-27T23:04:49.141+02:00  INFO 29517 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 28.3.2
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 7837 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/albertoadami/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2025-07-27T23:04:49.216+02:00  INFO 29517 --- [    Test worker] tc.testcontainers/ryuk:0.12.0            : Creating container for image: testcontainers/ryuk:0.12.0
+2025-07-27T23:04:49.319+02:00  INFO 29517 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2025-07-27T23:04:49.380+02:00  INFO 29517 --- [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 is starting: f6fddc2dccabeaf125f0b3651ba4297b5ac581412f3245629cb4f9964c57c6fc
+2025-07-27T23:04:49.543+02:00  INFO 29517 --- [    Test worker] tc.testcontainers/ryuk:0.12.0            : Container testcontainers/ryuk:0.12.0 started in PT0.326922S
+2025-07-27T23:04:49.547+02:00  INFO 29517 --- [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-07-27T23:04:49.548+02:00  INFO 29517 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2025-07-27T23:04:49.548+02:00  INFO 29517 --- [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2025-07-27T23:04:49.548+02:00  INFO 29517 --- [    Test worker] tc.postgres:16-alpine                    : Creating container for image: postgres:16-alpine
+2025-07-27T23:04:49.584+02:00  INFO 29517 --- [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine is starting: 624f5d9a0d8cbf061ce4a501e60008d6fc1f4e0d38dc8e20b2cd6672e41b46cf
+2025-07-27T23:04:50.382+02:00  INFO 29517 --- [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine started in PT0.833519S
+2025-07-27T23:04:50.383+02:00  INFO 29517 --- [    Test worker] tc.postgres:16-alpine                    : Container is started (JDBC URL: jdbc:postgresql://localhost:58676/testdb?loggerLevel=OFF)
+2025-07-27T23:04:50.401+02:00  INFO 29517 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [it.adami.spring.boot.clone.instagram.instagram.InstagramSpringBootCloneApplicationTests]: InstagramSpringBootCloneApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-27T23:04:50.410+02:00  INFO 29517 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration it.adami.spring.boot.clone.instagram.InstagramSpringBootCloneApplication for test class it.adami.spring.boot.clone.instagram.instagram.InstagramSpringBootCloneApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-07-27T23:04:50.439+02:00  INFO 29517 --- [    Test worker] InstagramSpringBootCloneApplicationTests : Starting InstagramSpringBootCloneApplicationTests using Java 17 with PID 29517 (started by albertoadami in /Users/albertoadami/repos/instagram-spring-boot-clone)
+2025-07-27T23:04:50.440+02:00  INFO 29517 --- [    Test worker] InstagramSpringBootCloneApplicationTests : The following 1 profile is active: "test"
+2025-07-27T23:04:50.589+02:00  INFO 29517 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-27T23:04:50.609+02:00  INFO 29517 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-07-27T23:04:50.744+02:00  INFO 29517 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-27T23:04:50.831+02:00  INFO 29517 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@568cbf8d
+2025-07-27T23:04:50.832+02:00  INFO 29517 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-27T23:04:50.849+02:00  INFO 29517 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:58676/testdb (PostgreSQL 16.9)
+2025-07-27T23:04:50.876+02:00  INFO 29517 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-07-27T23:04:50.877+02:00  INFO 29517 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2025-07-27T23:04:50.887+02:00  INFO 29517 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-07-27T23:04:50.935+02:00  INFO 29517 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-07-27T23:04:50.942+02:00  INFO 29517 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create user table"
+2025-07-27T23:04:50.945+02:00  WARN 29517 --- [    Test worker] o.f.c.i.s.DefaultSqlScriptExecutor       : DB: there is already a transaction in progress (SQL State: 25001 - Error Code: 0)
+2025-07-27T23:04:50.962+02:00  INFO 29517 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.012s)
+2025-07-27T23:04:51.002+02:00  INFO 29517 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-27T23:04:51.024+02:00  INFO 29517 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-27T23:04:51.039+02:00  INFO 29517 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-27T23:04:51.095+02:00  INFO 29517 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-27T23:04:51.127+02:00  WARN 29517 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-27T23:04:51.135+02:00  INFO 29517 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-27T23:04:51.416+02:00  INFO 29517 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-27T23:04:51.436+02:00  INFO 29517 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-27T23:04:51.754+02:00  INFO 29517 --- [    Test worker] InstagramSpringBootCloneApplicationTests : Started InstagramSpringBootCloneApplicationTests in 1.34 seconds (process running for 4.692)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
