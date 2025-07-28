@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class UserController(private val userService: it.adami.spring.boot.clone.instagram.service.UserService) {
+class UserController(private val userService: UserService) {
 
     @PostMapping("/signup")
-    fun signUp(@RequestBody request: it.adami.spring.boot.clone.instagram.dto.request.CreateUserDto): ResponseEntity<Any> {
+    fun signUp(@RequestBody request: CreateUserDto): ResponseEntity<Any> {
 
         val cmd = request.toCommand()
         try {
@@ -23,13 +23,13 @@ class UserController(private val userService: it.adami.spring.boot.clone.instagr
             return ResponseEntity.ok().build()
         } catch (e: EmailAlreadyInUseException) {
             return ResponseEntity.status(409).body(
-                it.adami.spring.boot.clone.instagram.dto.response.GenericErrorResponse(
+                GenericErrorResponse(
                     "Email already in use"
                 )
             )
         } catch (e: UsernameAlreadyInUseException) {
             return ResponseEntity.status(409).body(
-                it.adami.spring.boot.clone.instagram.dto.response.GenericErrorResponse(
+                GenericErrorResponse(
                     "Username already in use"
                 )
             )
