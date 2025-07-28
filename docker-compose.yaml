@@ -16,6 +16,33 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+
+  app:
+    container_name: instagram-app
+    image: instagram-spring-boot-clone
+    build: .
+    environment:
+      # Spring Boot database configuration
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/instagram
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8080:8080"
+    networks:
+      - db
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
 networks:
   db:
     driver: bridge
